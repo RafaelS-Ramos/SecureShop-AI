@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Produto | SecureShop AI</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>Editar Produto</h1>
+
+<form action="/admin/products/<%= product.id %>" method="POST">
+
+    <label>Nome</label><br>
+    <input
+        type="text"
+        name="name"
+        value="<%= product.name %>"
+        required
+    >
+    <br><br>
+
+    <label>Descrição</label><br>
+    <textarea
+        name="description"
+        rows="4"
+        cols="50"
+        required
+    ><%= product.description %></textarea>
+
+    <br><br>
+
+    <label>Preço</label><br>
+    <input
+        type="number"
+        name="price"
+        step="0.01"
+        value="<%= product.price %>"
+        required
+    >
+    <br><br>
+
+    <label>Categoria</label><br>
+    <input
+        type="text"
+        name="category"
+        value="<%= product.category %>"
+        required
+    >
+    <br><br>
+
+    <label>Estoque</label><br>
+    <input
+        type="number"
+        name="stock"
+        value="<%= product.stock %>"
+        required
+    >
+    <br><br>
+
+    <button type="submit">
+        Salvar Alterações
+    </button>
+
+</form>
+
+<br>
+
+<a href="/admin/products">
+    Voltar para Gerenciar Produtos
+</a>
+
+</body>
+</html>

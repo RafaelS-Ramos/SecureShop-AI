@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+
+<title>Painel Administrativo</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand"
+href="/">
+
+SecureShop AI
+
+</a>
+
+<a
+href="/logout"
+class="btn btn-danger">
+
+Sair
+
+</a>
+
+</div>
+
+</nav>
+
+<div class="container mt-5">
+
+<h2 class="mb-4">
+
+Painel Administrativo
+
+</h2>
+
+<div class="row">
+
+<div class="col-md-6 mb-4">
+
+<div class="card shadow border-primary">
+
+<div class="card-body text-center">
+
+<h5>
+
+Produtos
+
+</h5>
+
+<h1 class="display-4">
+
+<%= totalProducts %>
+
+</h1>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-4">
+
+<div class="card shadow border-success">
+
+<div class="card-body text-center">
+
+<h5>
+
+Usuários
+
+</h5>
+
+<h1 class="display-4">
+
+<%= totalUsers %>
+
+</h1>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+
+<a
+href="/admin/products"
+class="btn btn-primary w-100">
+
+Gerenciar Produtos
+
+</a>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<a
+href="/admin/products/new"
+class="btn btn-success w-100">
+
+Novo Produto
+
+</a>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<a
+href="/ai"
+class="btn btn-info w-100">
+
+Assistente IA
+
+</a>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<a
+href="/"
+class="btn btn-secondary w-100">
+
+Voltar à Loja
+
+</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+
+<strong>Tecnologias do Projeto</strong>
+
+<ul class="mb-0 mt-2">
+
+<li>Node.js + Express</li>
+
+<li>SQLite</li>
+
+<li>Bootstrap 5</li>
+
+<li>Ollama</li>
+
+<li>RAG</li>
+
+<li>Embeddings</li>
+
+<li>Controle de Acesso (RBAC)</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
